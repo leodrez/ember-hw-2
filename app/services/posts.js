@@ -1,8 +1,13 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
-  model() {
-   return  [
+export default Ember.Service.extend({
+  getPostById(id) {
+    const posts = this.getPosts();
+    return posts.findBy('id', id);
+  },
+
+  getPosts() {
+    return [ 
       {
         id: '1',
         title: 'First',
@@ -18,6 +23,6 @@ export default Ember.Route.extend({
         title: 'Third',
         body: 'Test three'
       }
-    ]
+    ];
   }
 });
