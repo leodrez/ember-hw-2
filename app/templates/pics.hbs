@@ -4,7 +4,7 @@
 {{else}}
   <button {{action "orderPics"}}>Descending</button>
 {{/if}}
-{{#each model as |pic|}}
+{{#each sortedOrder as |pic|}}
   <a href={{pic.data.url}} target='_blank'>
     <p>{{pic.data.title}}</p>
   </a>
