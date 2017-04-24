@@ -19,17 +19,14 @@ export default Ember.Controller.extend({
   }
 });
 
-
-
-
-  function sorter(a, b) {
-    let nameA = a.data.title.toUpperCase();
-    let nameB = b.data.title.toUpperCase();
-    if (nameA < nameB) {
-      return -1; 
-    }
-    if (nameA > nameB) {
-      return 1;
-    }
-    return 0;
+function sorter(a, b) {
+  let nameA = a.data.title.toUpperCase();
+  let nameB = b.data.title.toUpperCase();
+  if (nameA < nameB) {
+    return -1; 
   }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
+}
