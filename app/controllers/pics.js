@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+/*
   btnStat: true,
 
   sortedOrder: Ember.computed('btnStat', function() {
@@ -17,7 +18,6 @@ export default Ember.Controller.extend({
       this.toggleProperty('btnStat');
     } 
   }
-});
 
 function sorter(a, b) {
   let nameA = a.data.title.toUpperCase();
@@ -30,3 +30,5 @@ function sorter(a, b) {
   }
   return 0;
 }
+*/
+});

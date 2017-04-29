@@ -1,12 +1,16 @@
 <h3>Pics</h3>
-{{#if btnStat}}
+{{!-- {{#if btnStat}}
   <button {{action "orderPics"}}>Ascending</button>
 {{else}}
   <button {{action "orderPics"}}>Descending</button>
-{{/if}}
+{{/if}} 
 {{#each sortedOrder as |pic|}}
   <a href={{pic.data.url}} target='_blank'>
     <p>{{pic.data.title}}</p>
   </a>
+{{/each}}
+--}}
+{{#each model as |pic|}}
+  <p>{{pic.pic}}</p>
 {{/each}}
 {{outlet}}
