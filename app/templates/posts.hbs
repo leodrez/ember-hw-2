@@ -1,6 +1,6 @@
 <h3>Posts</h3>
 {{#each model as |post|}}
-  {{#link-to 'posts.post' post.id}}
+  {{#link-to 'posts.post' post}}
     <h3>{{post.title}}</h3>
   {{/link-to}}
 {{/each}}
